@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCTest</title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 22 Nov 2015 21:14:58 -0500</pubDate>
+    <lastBuildDate>Sun, 22 Nov 2015 21:14:58 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 22 Nov 2015 20:10:56 -0500</pubDate>
+        <link>/jekyll/update/2015/11/22/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">/jekyll/update/2015/11/22/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Hello World</title>
+        <description>&lt;p&gt;In Mavericks, (Mac OS X 10.9) making a bootable full-OS installer isn’t quite as straightforward as it had been in 10.7 and 10.8. In Lion and Mountain Lion, you could just use the Disk Utility to restore the …/Contents/SharedSupport/InstallESD.dmg to a drive or partition, and boot directly from that.&lt;/p&gt;
+
+&lt;p&gt;In 10.9 you can’t do that. You &lt;em&gt;could&lt;/em&gt; still do it through the GUI, using Disk Utility to restore the BaseSystem.dmg, which is an invisible file within the InstallESD.dmg once its mounted. But then you’d have to go through the rigamarole of first deleting the /Volumes/Mac OS X Base System/System/Installation/Packages symlink and copy in its place the Packages folder on the root level of the mounted InstallESD.dmg. Cumbersome.&lt;/p&gt;
+
+&lt;p&gt;A neater way to do this is to use the new built-in command line tool &amp;lt;pre&amp;gt;createinstallmedia&amp;lt;/pre&amp;gt; which is located in the Mavericks install application package.&lt;/p&gt;
+
+&lt;p&gt;If you run it with no arguments as Apple’s article suggests, you’ll be given a small tutorial plus this example:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;createinstallmedia --volume /Volumes/Untitled --applicationpath /Applications/Install OS X Mavericks.app
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If my Mavericks installer is in my /Users/Shared folder, and my destination volume is /Volumes/Untitled, then the command would look like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/Users/Shared/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled --applicationpath /Users/Shared/Install\ OS\ X\ Mavericks.app
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;One of the additional options available from the help screen is the &lt;code class=&quot;highlighter-rouge&quot;&gt;--nointeraction&lt;/code&gt; flag, which erases the target disk without asking for confirmation. You can tack onto the end of the command string, like so:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/Users/Shared/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/Untitled --applicationpath /Users/Shared/Install\ OS\ X\ Mavericks.app --nointeraction
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;It should only take a few minutes, and you’ll see the progress right in the Terminal window. When it’s done—behold—a full-OS-bootable Mavericks installer.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Nov 2015 20:10:56 -0500</pubDate>
+        <link>/jekyll/update/2015/11/22/hello-world.html</link>
+        <guid isPermaLink="true">/jekyll/update/2015/11/22/hello-world.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
